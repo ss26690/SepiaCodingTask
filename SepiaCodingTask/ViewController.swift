@@ -15,7 +15,5 @@ class ViewController: UIViewController {
         var number: NSNumber = 1
         var result  = number as? Int
         debugPrint(result!)
-        
-        
     }
 }

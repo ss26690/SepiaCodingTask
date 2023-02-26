@@ -128,6 +128,15 @@
 			path = Jsons;
 			sourceTree = "<group>";
 		};
+		2635DE4929AB2DAE00E22AE3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				269FF50029AA52A600E5844F /* Main.storyboard */,
+				269FF50529AA52A600E5844F /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		269FF4EE29AA52A600E5844F = {
 			isa = PBXGroup;
 			children = (
@@ -153,11 +162,10 @@
 		269FF4F929AA52A600E5844F /* SepiaCodingTask */ = {
 			isa = PBXGroup;
 			children = (
+				2635DE4929AB2DAE00E22AE3 /* UI */,
 				2635DE4429AB297B00E22AE3 /* Assets */,
 				2635DE4329AB26EE00E22AE3 /* DefaultFiles */,
 				269FF4FE29AA52A600E5844F /* ViewController.swift */,
-				269FF50029AA52A600E5844F /* Main.storyboard */,
-				269FF50529AA52A600E5844F /* LaunchScreen.storyboard */,
 			);
 			path = SepiaCodingTask;
 			sourceTree = "<group>";
