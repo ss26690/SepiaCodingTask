@@ -9,9 +9,14 @@
 /* Begin PBXBuildFile section */
 		103482C2EA3575195CB62D69 /* Pods_SepiaCodingTask_SepiaCodingTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCB0425A8E85E046957C09E /* Pods_SepiaCodingTask_SepiaCodingTaskUITests.framework */; };
 		2635DE4829AB29CB00E22AE3 /* pets_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 2635DE4729AB29CB00E22AE3 /* pets_list.json */; };
+		264A497129ABCAD10064ADAE /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A497029ABCAD10064ADAE /* Service.swift */; };
+		264A497629ABCB8A0064ADAE /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A497529ABCB8A0064ADAE /* PetModel.swift */; };
+		264A497829ABD09E0064ADAE /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A497729ABD09E0064ADAE /* FileLoader.swift */; };
+		264A497B29ABDBBC0064ADAE /* PetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A497A29ABDBBC0064ADAE /* PetViewModel.swift */; };
+		264A498229ABE07E0064ADAE /* PetTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A498129ABE07E0064ADAE /* PetTVC.swift */; };
+		264A498429ABE1CB0064ADAE /* PetDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264A498329ABE1CB0064ADAE /* PetDashboardVC.swift */; };
 		269FF4FB29AA52A600E5844F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FF4FA29AA52A600E5844F /* AppDelegate.swift */; };
 		269FF4FD29AA52A600E5844F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FF4FC29AA52A600E5844F /* SceneDelegate.swift */; };
-		269FF4FF29AA52A600E5844F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FF4FE29AA52A600E5844F /* ViewController.swift */; };
 		269FF50229AA52A600E5844F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269FF50029AA52A600E5844F /* Main.storyboard */; };
 		269FF50429AA52A600E5844F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 269FF50329AA52A600E5844F /* Assets.xcassets */; };
 		269FF50729AA52A600E5844F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269FF50529AA52A600E5844F /* LaunchScreen.storyboard */; };
@@ -43,10 +48,15 @@
 		1B3082D418C23C132943A6BB /* Pods-SepiaCodingTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SepiaCodingTask.debug.xcconfig"; path = "Target Support Files/Pods-SepiaCodingTask/Pods-SepiaCodingTask.debug.xcconfig"; sourceTree = "<group>"; };
 		1E484673D5CB44F06207B736 /* Pods-SepiaCodingTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SepiaCodingTaskTests.release.xcconfig"; path = "Target Support Files/Pods-SepiaCodingTaskTests/Pods-SepiaCodingTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		2635DE4729AB29CB00E22AE3 /* pets_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pets_list.json; sourceTree = "<group>"; };
+		264A497029ABCAD10064ADAE /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		264A497529ABCB8A0064ADAE /* PetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
+		264A497729ABD09E0064ADAE /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
+		264A497A29ABDBBC0064ADAE /* PetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetViewModel.swift; sourceTree = "<group>"; };
+		264A498129ABE07E0064ADAE /* PetTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTVC.swift; sourceTree = "<group>"; };
+		264A498329ABE1CB0064ADAE /* PetDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDashboardVC.swift; sourceTree = "<group>"; };
 		269FF4F729AA52A600E5844F /* SepiaCodingTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SepiaCodingTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		269FF4FA29AA52A600E5844F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		269FF4FC29AA52A600E5844F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		269FF4FE29AA52A600E5844F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		269FF50129AA52A600E5844F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		269FF50329AA52A600E5844F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		269FF50629AA52A600E5844F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -128,13 +138,73 @@
 			path = Jsons;
 			sourceTree = "<group>";
 		};
-		2635DE4929AB2DAE00E22AE3 /* UI */ = {
+		2635DE4929AB2DAE00E22AE3 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				269FF50029AA52A600E5844F /* Main.storyboard */,
 				269FF50529AA52A600E5844F /* LaunchScreen.storyboard */,
 			);
-			path = UI;
+			path = View;
+			sourceTree = "<group>";
+		};
+		264A497229ABCB050064ADAE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				264A497029ABCAD10064ADAE /* Service.swift */,
+				264A497729ABD09E0064ADAE /* FileLoader.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		264A497329ABCB140064ADAE /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				264A497429ABCB1F0064ADAE /* Model */,
+				264A497929ABDBA10064ADAE /* ViewModel */,
+				264A497C29ABDDFE0064ADAE /* Controller */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		264A497429ABCB1F0064ADAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				264A497529ABCB8A0064ADAE /* PetModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		264A497929ABDBA10064ADAE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				264A497A29ABDBBC0064ADAE /* PetViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		264A497C29ABDDFE0064ADAE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				264A498029ABE0600064ADAE /* TVC */,
+				264A497F29ABE0560064ADAE /* VC */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		264A497F29ABE0560064ADAE /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				264A498329ABE1CB0064ADAE /* PetDashboardVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		264A498029ABE0600064ADAE /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				264A498129ABE07E0064ADAE /* PetTVC.swift */,
+			);
+			path = TVC;
 			sourceTree = "<group>";
 		};
 		269FF4EE29AA52A600E5844F = {
@@ -162,10 +232,11 @@
 		269FF4F929AA52A600E5844F /* SepiaCodingTask */ = {
 			isa = PBXGroup;
 			children = (
-				2635DE4929AB2DAE00E22AE3 /* UI */,
+				264A497329ABCB140064ADAE /* Dashboard */,
+				264A497229ABCB050064ADAE /* Service */,
+				2635DE4929AB2DAE00E22AE3 /* View */,
 				2635DE4429AB297B00E22AE3 /* Assets */,
 				2635DE4329AB26EE00E22AE3 /* DefaultFiles */,
-				269FF4FE29AA52A600E5844F /* ViewController.swift */,
 			);
 			path = SepiaCodingTask;
 			sourceTree = "<group>";
@@ -222,6 +293,7 @@
 				269FF4F329AA52A600E5844F /* Sources */,
 				269FF4F429AA52A600E5844F /* Frameworks */,
 				269FF4F529AA52A600E5844F /* Resources */,
+				28D415CC704CF39DF355660B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +331,7 @@
 				269FF51329AA52A700E5844F /* Sources */,
 				269FF51429AA52A700E5844F /* Frameworks */,
 				269FF51529AA52A700E5844F /* Resources */,
+				F4BDE2AC0865BDBC72E04811 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -359,6 +432,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
+		28D415CC704CF39DF355660B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SepiaCodingTask/Pods-SepiaCodingTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SepiaCodingTask/Pods-SepiaCodingTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SepiaCodingTask/Pods-SepiaCodingTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		492365088AA5709C048F69C9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -425,6 +515,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F4BDE2AC0865BDBC72E04811 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SepiaCodingTask-SepiaCodingTaskUITests/Pods-SepiaCodingTask-SepiaCodingTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SepiaCodingTask-SepiaCodingTaskUITests/Pods-SepiaCodingTask-SepiaCodingTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SepiaCodingTask-SepiaCodingTaskUITests/Pods-SepiaCodingTask-SepiaCodingTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -432,8 +539,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				269FF4FF29AA52A600E5844F /* ViewController.swift in Sources */,
+				264A497829ABD09E0064ADAE /* FileLoader.swift in Sources */,
+				264A498429ABE1CB0064ADAE /* PetDashboardVC.swift in Sources */,
+				264A497129ABCAD10064ADAE /* Service.swift in Sources */,
+				264A497B29ABDBBC0064ADAE /* PetViewModel.swift in Sources */,
 				269FF4FB29AA52A600E5844F /* AppDelegate.swift in Sources */,
+				264A498229ABE07E0064ADAE /* PetTVC.swift in Sources */,
+				264A497629ABCB8A0064ADAE /* PetModel.swift in Sources */,
 				269FF4FD29AA52A600E5844F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

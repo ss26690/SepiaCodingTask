@@ -7,6 +7,7 @@ target 'SepiaCodingTask' do
 
   # Pods for SepiaCodingTask
   pod 'SwiftLint'
+  pod 'Kingfisher'
 
   target 'SepiaCodingTaskTests' do
     inherit! :search_paths
