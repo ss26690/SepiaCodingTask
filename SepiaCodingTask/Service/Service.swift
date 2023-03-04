@@ -7,23 +7,16 @@
 
 import UIKit
 
-class Service {
+struct Service {
     
-    private init() {
-        // For Creating singulton
-    }
+    // Instance of structure
+    static var sharedInstance = Service()
     
-     static var sharedInstance = Service()
-    
-    func getAllPetData(completion: @escaping([PetModel]?) -> Void) {
-        guard let data = FileLoader.readLocalFile("pets_list")
-        else {
-            fatalError("Unable to locate file \"pets_list.json\" in main bundle.")
-        }
-        
+    // Getting Data form Json File returning in completion handler after data get from Json
+    func getAllPetData(_ localFile: Data, completion: @escaping([PetModel]?) -> Void) {
         do {
             var arrPetData = [PetModel]()
-            let result = try JSONDecoder().decode(PetResult.self, from: data)
+            let result = try JSONDecoder().decode(PetResult.self, from: localFile)
             result.pets.forEach {
                 arrPetData.append(PetModel(imageUrl: $0.image_url ?? "",
                                            title: $0.title ?? "",

@@ -6,11 +6,24 @@
 //
 
 import UIKit
+import Kingfisher
 
 class PetTVC: UITableViewCell {
 
-    @IBOutlet weak var petImage: UIImageView!
-    @IBOutlet weak var petName: UILabel!
+    @IBOutlet weak private var petImage: UIImageView!
+    @IBOutlet weak private var petName: UILabel!
+    
+    // Set Cell Data
+    var cellData: PetViewModel? {
+        didSet {
+            if let imageUrl = cellData?.imageUrl, !imageUrl.isEmpty {
+                let source = ImageResource(downloadURL: URL(string: imageUrl)!,
+                                           cacheKey: cellData?.imageUrl )
+                petImage.kf.setImage(with: source)
+            }
+            petName.text = cellData?.title
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

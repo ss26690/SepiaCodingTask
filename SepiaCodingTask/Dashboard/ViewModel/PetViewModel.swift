@@ -7,8 +7,8 @@
 
 import UIKit
 
-class PetViewModel {
-    
+
+struct PetViewModel {
     var imageUrl: String?
     var title: String?
     var contentUrl: String?

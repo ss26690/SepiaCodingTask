@@ -7,13 +7,15 @@
 
 import Foundation
 
-class FileLoader {
+struct FileLoader {
+    
+    // Loading File from assets with the help of finename and type
     static func readLocalFile(_ filename: String) -> Data? {
         guard let file = Bundle.main.path(forResource: filename, ofType: "json")
         else {
             fatalError("Unable to locate file \"\(filename)\" in main bundle.")
         }
-        
+
         do {
             return try String(contentsOfFile: file).data(using: .utf8)
         } catch {

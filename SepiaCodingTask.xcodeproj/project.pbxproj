@@ -20,10 +20,11 @@
 		269FF50229AA52A600E5844F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269FF50029AA52A600E5844F /* Main.storyboard */; };
 		269FF50429AA52A600E5844F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 269FF50329AA52A600E5844F /* Assets.xcassets */; };
 		269FF50729AA52A600E5844F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269FF50529AA52A600E5844F /* LaunchScreen.storyboard */; };
-		269FF51229AA52A700E5844F /* SepiaCodingTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FF51129AA52A700E5844F /* SepiaCodingTaskTests.swift */; };
 		269FF51C29AA52A700E5844F /* SepiaCodingTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FF51B29AA52A700E5844F /* SepiaCodingTaskUITests.swift */; };
 		269FF51E29AA52A700E5844F /* SepiaCodingTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FF51D29AA52A700E5844F /* SepiaCodingTaskUITestsLaunchTests.swift */; };
 		2C96E1A38CF12A30431B5EF8 /* Pods_SepiaCodingTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB91CEFB331B6D4FE78BFEF /* Pods_SepiaCodingTask.framework */; };
+		4715A96529B3312B00D3872A /* ServiceUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4715A96429B3312B00D3872A /* ServiceUnitTest.swift */; };
+		4715A96729B3468400D3872A /* FileLoaderUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4715A96629B3468400D3872A /* FileLoaderUnitTest.swift */; };
 		E296F657880C7E09830489AC /* Pods_SepiaCodingTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C1E286BEDAE2550B1205A54 /* Pods_SepiaCodingTaskTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,11 +63,12 @@
 		269FF50629AA52A600E5844F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		269FF50829AA52A600E5844F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		269FF50D29AA52A700E5844F /* SepiaCodingTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SepiaCodingTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		269FF51129AA52A700E5844F /* SepiaCodingTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepiaCodingTaskTests.swift; sourceTree = "<group>"; };
 		269FF51729AA52A700E5844F /* SepiaCodingTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SepiaCodingTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		269FF51B29AA52A700E5844F /* SepiaCodingTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepiaCodingTaskUITests.swift; sourceTree = "<group>"; };
 		269FF51D29AA52A700E5844F /* SepiaCodingTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepiaCodingTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2C1E286BEDAE2550B1205A54 /* Pods_SepiaCodingTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SepiaCodingTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4715A96429B3312B00D3872A /* ServiceUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceUnitTest.swift; sourceTree = "<group>"; };
+		4715A96629B3468400D3872A /* FileLoaderUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoaderUnitTest.swift; sourceTree = "<group>"; };
 		57A241CAAA672621008C8547 /* Pods-SepiaCodingTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SepiaCodingTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-SepiaCodingTaskTests/Pods-SepiaCodingTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9AB91CEFB331B6D4FE78BFEF /* Pods_SepiaCodingTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SepiaCodingTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A797629D4D07382744FA7E8B /* Pods-SepiaCodingTask-SepiaCodingTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SepiaCodingTask-SepiaCodingTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-SepiaCodingTask-SepiaCodingTaskUITests/Pods-SepiaCodingTask-SepiaCodingTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -244,7 +246,8 @@
 		269FF51029AA52A700E5844F /* SepiaCodingTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				269FF51129AA52A700E5844F /* SepiaCodingTaskTests.swift */,
+				4715A96429B3312B00D3872A /* ServiceUnitTest.swift */,
+				4715A96629B3468400D3872A /* FileLoaderUnitTest.swift */,
 			);
 			path = SepiaCodingTaskTests;
 			sourceTree = "<group>";
@@ -554,7 +557,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				269FF51229AA52A700E5844F /* SepiaCodingTaskTests.swift in Sources */,
+				4715A96729B3468400D3872A /* FileLoaderUnitTest.swift in Sources */,
+				4715A96529B3312B00D3872A /* ServiceUnitTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,9 +726,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 43F4GWVCFZ;
+				DEVELOPMENT_TEAM = 6XCFL3SZGR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SepiaCodingTask/DefaultFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -732,13 +737,15 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = saurav.sagar.SepiaCodingTask;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saurav.sagar.SepiaCodingTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -751,9 +758,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 43F4GWVCFZ;
+				DEVELOPMENT_TEAM = 6XCFL3SZGR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SepiaCodingTask/DefaultFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -761,13 +769,15 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = saurav.sagar.SepiaCodingTask;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saurav.sagar.SepiaCodingTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

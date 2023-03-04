@@ -7,6 +7,7 @@
 
 import UIKit
 import Kingfisher
+import SafariServices
 
 class PetDashboardVC: UIViewController {
     
@@ -19,9 +20,14 @@ class PetDashboardVC: UIViewController {
         getData()
     }
     
-
+    // Fetching requesred data to process accoring to requirementService obj = Service()
     func getData() {
-        Service.sharedInstance.getAllPetData {pet in
+        
+        guard let data = FileLoader.readLocalFile("pets_list") else {
+            fatalError("Unable to locate file \"pets_list.json\" in main bundle.")
+        }
+        
+        Service.sharedInstance.getAllPetData(data) {pet in
             if pet != nil {
                 self.arrPetVM = pet?.map({
                     return PetViewModel(pet: $0)
@@ -33,9 +39,21 @@ class PetDashboardVC: UIViewController {
             }
         }
     }
+    
+    // MARK: Open in-app Webpage
+    func showTutorial(_ index: Int) {
+        if let url = URL(string: arrPetVM[index].contentUrl ?? "") {
+            let config = SFSafariViewController.Configuration()
+            config.entersReaderIfAvailable = true
+
+            let webVc = SFSafariViewController(url: url, configuration: config)
+            present(webVc, animated: true)
+        }
+    }
 
 }
 
+// MARK: Tableview Delegates and Data Source
 extension PetDashboardVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         arrPetVM.count
@@ -45,16 +63,13 @@ extension PetDashboardVC: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "PetTVC", for: indexPath) as? PetTVC else {
             return UITableViewCell()
         }
-        let cellData = arrPetVM[indexPath.row]
-        if let imageUrl = cellData.imageUrl, !imageUrl.isEmpty {
-            let source = ImageResource(downloadURL: URL(string: imageUrl)!,
-                                       cacheKey: cellData.imageUrl )
-            cell.petImage.kf.setImage(with: source)
-        }
-        cell.petName.text = cellData.title
+        
+        cell.cellData = arrPetVM[indexPath.row]
         
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        showTutorial(indexPath.row)
+    }
 }
