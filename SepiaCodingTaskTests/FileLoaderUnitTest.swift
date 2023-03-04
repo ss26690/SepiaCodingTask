@@ -6,9 +6,11 @@
 //
 
 import XCTest
+@testable import SepiaCodingTask
 
 final class FileLoaderUnitTest: XCTestCase {
     
-    
-
+    func test_FileLoader_With_Returns_ValiedPath() {
+        XCTAssertNotNil(FileLoader.readLocalFile("pets_list"))
+    }
 }
